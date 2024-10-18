@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h3>User Data</h3>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" placeholder="Enter your phone number" required>
+          </div>
+          <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="button" id="copyButton">Copy to Clipboard</button>
+          </div>
+          <p id="clipboard-msg">Copied to clipboard!</p>
+          <div class="result-container">
+            <h4>Pasted Data:</h4>
+            <textarea id="resultArea" rows="5" placeholder="Copied data will appear here..." readonly></textarea>
+          </div>
+        </form>
+      </div>
+    <script src = "./script.js"></script>
+</body>
+</html>
